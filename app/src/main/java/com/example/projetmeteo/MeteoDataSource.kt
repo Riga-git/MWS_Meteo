@@ -19,4 +19,6 @@ class Whether {
     fun fetchWhether(){
         println("Whether fetched")
     }
+
+
 }
