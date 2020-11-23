@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/CurrentDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Meteo, Yverdon"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/City"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/City"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:text="City"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentDay"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <ImageButton
+        android:id="@+id/GetWhether"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:onClick="getWhetherData"
+        app:layout_constraintStart_toEndOf="@+id/City"
+        app:layout_constraintTop_toTopOf="@+id/City"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+    <EditText
+        android:id="@+id/Lat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.27"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:text="Lat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/City" />
+
+    <EditText
+        android:id="@+id/Lon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:text="Lon"
+        app:layout_constraintStart_toEndOf="@+id/Lat"
+        app:layout_constraintTop_toBottomOf="@+id/City"
+        app:layout_constraintWidth_percent="0.27" />
+
+    <ImageButton
+        android:id="@+id/LocateButton"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="getPosition"
+        app:layout_constraintStart_toEndOf="@+id/Lon"
+        app:layout_constraintTop_toBottomOf="@+id/City"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+    <ImageView
+        android:id="@+id/CurrentDayWhetherIcon"
+        android:layout_width="130dp"
+        android:layout_height="136dp"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lat"
+        app:layout_constraintWidth_percent="0.6"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/CurrentDayWhetherDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Cloudy"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/CurrentDayWhetherIcon"
+        app:layout_constraintTop_toTopOf="@+id/CurrentDayWhetherIcon" />
+
+    <TextView
+        android:id="@+id/CurrentDayTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Temp: 17 °C"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/CurrentDayWhetherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentDayWhetherDescription" />
+
+    <TextView
+        android:id="@+id/CurrentDayHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Humidity : 56 %"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/CurrentDayWhetherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentDayTemp" />
+
+    <TextView
+        android:id="@+id/CurrentDayRain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Rain (last 3h) : 2.3 mm/h"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/CurrentDayWhetherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentDayHumidity" />
+
+    <TextView
+        android:id="@+id/CurrentDayPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Pressure : 1075hPa"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/CurrentDayWhetherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentDayRain" />
+
+    <View
+        android:id="@+id/dividerHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_margin="20dp"
+        tools:layout_editor_absoluteY="357dp"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentDayWhetherIcon"/>
+
+    <ImageView
+        android:id="@+id/D1WhetherIcon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:background="#FFFFFF"
+        android:cropToPadding="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerHorizontal"
+        app:layout_constraintWidth_percent="0.15"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/D1Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="23/11"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/D1WhetherIcon"
+        app:layout_constraintEnd_toEndOf="@+id/D1WhetherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/D1WhetherIcon" />
+
+    <ImageView
+        android:id="@+id/D2WhetherIcon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:background="#FFFFFF"
+        android:cropToPadding="false"
+        app:layout_constraintStart_toEndOf="@+id/D1WhetherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/dividerHorizontal"
+        app:layout_constraintWidth_percent="0.15"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/D2Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="24/11"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/D2WhetherIcon"
+        app:layout_constraintEnd_toEndOf="@+id/D2WhetherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/D2WhetherIcon" />
+
+    <ImageView
+        android:id="@+id/D3WhetherIcon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:background="#FFFFFF"
+        android:cropToPadding="false"
+        app:layout_constraintStart_toEndOf="@+id/D2WhetherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/dividerHorizontal"
+        app:layout_constraintWidth_percent="0.15"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/D3Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="25/11"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/D3WhetherIcon"
+        app:layout_constraintEnd_toEndOf="@+id/D3WhetherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/D3WhetherIcon" />
+
+    <ImageView
+        android:id="@+id/D4WhetherIcon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:background="#FFFFFF"
+        android:cropToPadding="false"
+        app:layout_constraintStart_toEndOf="@+id/D3WhetherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/dividerHorizontal"
+        app:layout_constraintWidth_percent="0.15"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/D4Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="26/11"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/D4WhetherIcon"
+        app:layout_constraintEnd_toEndOf="@+id/D4WhetherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/D4WhetherIcon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
