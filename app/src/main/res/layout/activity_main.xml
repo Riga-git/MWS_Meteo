@@ -103,7 +103,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:text="Temp: 17 °C"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
