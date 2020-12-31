@@ -7,6 +7,7 @@ import kotlinx.coroutines.*
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.Dispatchers.Main
 import com.example.projetmeteo.network.*
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     private suspend fun apiRequest(){
         val result = getWhetherDataFromApi()
         setCurrentDataOnMainThread(result)
+        setIcons(result)
     }
 
     private suspend fun getWhetherDataFromApi() : ApiCurrentWeatherData {
@@ -45,6 +47,12 @@ class MainActivity : AppCompatActivity() {
             CurrentDayRain.text = "Rain(3h) : " + if(currentWeatherData.rain != null) currentWeatherData.rain.h3.toString() else {"0"} + " mm/h"
             CurrentDayPressure.text = "Pressure : " + currentWeatherData.main.pressure.toString() + " hPa"
             CurrentDay.text = "Meteo, ${currentWeatherData.name}"
+        }
+    }
+
+    private suspend fun setIcons(currentWeatherData : ApiCurrentWeatherData){
+        withContext(Main) {
+            Picasso.get().load("http://openweathermap.org/img/wn/${currentWeatherData.weather.first().icon}@2x.png").into(CurrentDayWhetherIcon)
         }
     }
 }

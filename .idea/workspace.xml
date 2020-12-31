@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
@@ -32,9 +32,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e776473b-be1b-4f0d-ad45-f17b7a23ef81" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/ProjetMeteo.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/ProjetMeteo.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetmeteo/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetmeteo/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +67,7 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -86,7 +90,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../android-kotlin-fundamentals-apps/MarsRealEstateNetwork" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -100,6 +104,7 @@
       <recent name="com.example.projetmeteo.network" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\RepoGitMeteo\app\src\main\res" />
       <recent name="C:\Users\macri\Documents\ReposGit\Cas\MWS_Meteo\app\src\main\java\com\example\projetmeteo\network" />
     </key>
   </component>
@@ -234,31 +239,39 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="27" y="97" width="1519" height="1240" key="AVDManager/0.0.2560.1440@0.0.2560.1440" timestamp="1606939373706" />
+    <state x="540" y="334" key="AndroidCreateResourceDirectoryDialog" timestamp="1609436774558">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="540" y="334" key="AndroidCreateResourceDirectoryDialog/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609436774558" />
+    <state x="540" y="334" key="AndroidCreateResourceFileDialog" timestamp="1609436817285">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="540" y="334" key="AndroidCreateResourceFileDialog/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609436817285" />
     <state x="551" y="229" width="440" height="640" key="FileChooserDialogImpl" timestamp="1607282602170">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1606159508176" />
     <state x="551" y="229" width="440" height="640" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1607282602170" />
-    <state width="1875" height="317" key="GridCell.Tab.0.bottom" timestamp="1609416042359">
+    <state width="1875" height="275" key="GridCell.Tab.0.bottom" timestamp="1609437451482">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="616" height="491" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1607276521025" />
-    <state width="1875" height="317" key="GridCell.Tab.0.bottom/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609416042359" />
-    <state width="1875" height="317" key="GridCell.Tab.0.center" timestamp="1609416042358">
+    <state width="1875" height="275" key="GridCell.Tab.0.bottom/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609437451482" />
+    <state width="1875" height="275" key="GridCell.Tab.0.center" timestamp="1609437451481">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="616" height="491" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1607276521025" />
-    <state width="1875" height="317" key="GridCell.Tab.0.center/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609416042358" />
-    <state width="1875" height="317" key="GridCell.Tab.0.left" timestamp="1609416042358">
+    <state width="1875" height="275" key="GridCell.Tab.0.center/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609437451481" />
+    <state width="1875" height="275" key="GridCell.Tab.0.left" timestamp="1609437451481">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="616" height="491" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1607276521025" />
-    <state width="1875" height="317" key="GridCell.Tab.0.left/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609416042358" />
-    <state width="1875" height="317" key="GridCell.Tab.0.right" timestamp="1609416042359">
+    <state width="1875" height="275" key="GridCell.Tab.0.left/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609437451481" />
+    <state width="1875" height="275" key="GridCell.Tab.0.right" timestamp="1609437451481">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="616" height="491" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1607276521025" />
-    <state width="1875" height="317" key="GridCell.Tab.0.right/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609416042359" />
+    <state width="1875" height="275" key="GridCell.Tab.0.right/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609437451481" />
     <state x="996" y="440" key="RollbackChangesDialog" timestamp="1606767367719">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -272,10 +285,10 @@
       <screen x="1920" y="120" width="1920" height="1040" />
     </state>
     <state x="1920" y="120" width="1494" height="790" maximized="true" key="dock-window-1/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609345752358" />
-    <state x="2051" y="120" width="1805" height="1064" key="dock-window-2" timestamp="1609413799926">
+    <state x="1946" y="134" width="1805" height="1064" key="dock-window-2" timestamp="1609436693495">
       <screen x="1920" y="120" width="1920" height="1040" />
     </state>
-    <state x="2051" y="120" width="1805" height="1064" key="dock-window-2/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609413799926" />
+    <state x="1946" y="134" width="1805" height="1064" key="dock-window-2/1920.120.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1609436693495" />
     <state x="1583" y="330" width="672" height="678" key="search.everywhere.popup" timestamp="1607276570539">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
