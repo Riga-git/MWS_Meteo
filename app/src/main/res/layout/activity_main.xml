@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Meteo, Yverdon"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -27,7 +26,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:inputType="text"
-        android:text="City"
+        android:hint="City"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CurrentDay"
         app:layout_constraintWidth_percent="0.6" />
@@ -49,7 +48,7 @@
         app:layout_constraintWidth_percent="0.27"
         android:layout_margin="20dp"
         android:inputType="text"
-        android:text="Lat"
+        android:hint="Lat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/City" />
 
@@ -59,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:inputType="text"
-        android:text="Lon"
+        android:hint="Lon"
         app:layout_constraintStart_toEndOf="@+id/Lat"
         app:layout_constraintTop_toBottomOf="@+id/City"
         app:layout_constraintWidth_percent="0.27" />
@@ -90,7 +89,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:text="Cloudy"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -115,7 +113,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:text="Humidity : 56 %"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -128,7 +125,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:text="Rain (last 3h) : 2.3 mm/h"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -141,7 +137,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:text="Pressure : 1075hPa"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -260,18 +255,6 @@
         app:layout_constraintStart_toStartOf="@+id/D4WhetherIcon"
         app:layout_constraintEnd_toEndOf="@+id/D4WhetherIcon"
         app:layout_constraintTop_toBottomOf="@+id/D4WhetherIcon" />
-
-    <TextView
-        android:id="@+id/Test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="26/11"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/D1Date" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

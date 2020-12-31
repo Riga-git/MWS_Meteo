@@ -29,16 +29,22 @@ class MainActivity : AppCompatActivity() {
 
     private suspend fun getWhetherDataFromApi() : ApiCurrentWeatherData {
         val apiService = WeatherApiService()
-        return apiService.getCurrentWeather(location = "London").await()
+        var response = ApiCurrentWeatherData()
+        try {
+            response = apiService.getCurrentWeather(location = City.text.toString()).await()
+        }finally {
+            return response
+        }
     }
 
     private suspend fun setCurrentDataOnMainThread(currentWeatherData : ApiCurrentWeatherData){
         withContext(Main){
-            //CurrentDayWhetherDescription.text = currentWeatherData.weather[1].description
-            CurrentDayTemp.text = "Temp" + currentWeatherData.main.temp.toString()
-            CurrentDayHumidity.text = currentWeatherData.main.humidity.toString()
-            CurrentDayRain.text = currentWeatherData.rain.h3.toString()
-            CurrentDayPressure.text = currentWeatherData.main.pressure.toString()
+            CurrentDayWhetherDescription.text = currentWeatherData.weather.first().description.toUpperCase()
+            CurrentDayTemp.text = "Temp : " + currentWeatherData.main.temp.toString() + " °C"
+            CurrentDayHumidity.text = "Humidity : " + currentWeatherData.main.humidity.toString() + " %"
+            CurrentDayRain.text = "Rain(3h) : " + if(currentWeatherData.rain != null) currentWeatherData.rain.h3.toString() else {"0"} + " mm/h"
+            CurrentDayPressure.text = "Pressure : " + currentWeatherData.main.pressure.toString() + " hPa"
+            CurrentDay.text = "Meteo, ${currentWeatherData.name}"
         }
     }
 }
