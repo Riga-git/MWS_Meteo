@@ -170,7 +170,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="23/11"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -196,7 +195,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="24/11"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -222,7 +220,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="25/11"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -248,7 +245,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="26/11"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -256,5 +252,100 @@
         app:layout_constraintEnd_toEndOf="@+id/D4WhetherIcon"
         app:layout_constraintTop_toBottomOf="@+id/D4WhetherIcon" />
 
+    <TextView
+        android:id="@+id/D1TempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#F44336"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/D1Date"
+        app:layout_constraintStart_toStartOf="@+id/D1Date"
+        app:layout_constraintTop_toBottomOf="@+id/D1Date" />
+
+    <TextView
+        android:id="@+id/D1TempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#2196F3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/D1Date"
+        app:layout_constraintStart_toStartOf="@+id/D1Date"
+        app:layout_constraintTop_toBottomOf="@+id/D1TempMax" />
+
+    <TextView
+        android:id="@+id/D2TempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#F44336"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/D2Date"
+        app:layout_constraintStart_toStartOf="@+id/D2Date"
+        app:layout_constraintTop_toBottomOf="@+id/D2Date" />
+
+    <TextView
+        android:id="@+id/D2TempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#2196F3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/D2Date"
+        app:layout_constraintStart_toStartOf="@+id/D2Date"
+        app:layout_constraintTop_toBottomOf="@+id/D2TempMax" />
+
+    <TextView
+        android:id="@+id/D3TempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#F44336"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/D3Date"
+        app:layout_constraintStart_toStartOf="@+id/D3Date"
+        app:layout_constraintTop_toBottomOf="@+id/D3Date" />
+
+    <TextView
+        android:id="@+id/D3TempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#2196F3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/D3Date"
+        app:layout_constraintStart_toStartOf="@+id/D3Date"
+        app:layout_constraintTop_toBottomOf="@+id/D3TempMax" />
+
+    <TextView
+        android:id="@+id/D4TempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#F44336"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/D4Date"
+        app:layout_constraintStart_toStartOf="@+id/D4Date"
+        app:layout_constraintTop_toBottomOf="@+id/D4Date" />
+
+    <TextView
+        android:id="@+id/D4TempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#2196F3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/D4Date"
+        app:layout_constraintStart_toStartOf="@+id/D4Date"
+        app:layout_constraintTop_toBottomOf="@+id/D4TempMax" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
