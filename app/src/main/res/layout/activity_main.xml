@@ -29,7 +29,8 @@
         android:hint="City"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CurrentDay"
-        app:layout_constraintWidth_percent="0.6" />
+        app:layout_constraintWidth_percent="0.53
+" />
 
     <ImageButton
         android:id="@+id/GetWhether"
@@ -41,28 +42,6 @@
         app:layout_constraintTop_toTopOf="@+id/City"
         app:srcCompat="@android:drawable/stat_sys_download" />
 
-    <EditText
-        android:id="@+id/Lat"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintWidth_percent="0.27"
-        android:layout_margin="20dp"
-        android:inputType="text"
-        android:hint="Lat"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/City" />
-
-    <EditText
-        android:id="@+id/Lon"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:inputType="text"
-        android:hint="Lon"
-        app:layout_constraintStart_toEndOf="@+id/Lat"
-        app:layout_constraintTop_toBottomOf="@+id/City"
-        app:layout_constraintWidth_percent="0.27" />
-
     <ImageButton
         android:id="@+id/LocateButton"
         android:layout_width="56dp"
@@ -70,8 +49,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:onClick="getLastLocation"
-        app:layout_constraintStart_toEndOf="@+id/Lon"
-        app:layout_constraintTop_toBottomOf="@+id/City"
+        app:layout_constraintStart_toEndOf="@+id/GetWhether"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentDay"
         app:srcCompat="@android:drawable/ic_menu_mylocation" />
 
     <ImageView
@@ -80,7 +59,7 @@
         android:layout_height="136dp"
         android:layout_margin="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Lat"
+        app:layout_constraintTop_toBottomOf="@+id/City"
         app:layout_constraintWidth_percent="0.6"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -102,7 +81,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="1sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/CurrentDayWhetherIcon"
         app:layout_constraintTop_toBottomOf="@+id/CurrentDayWhetherDescription" />
